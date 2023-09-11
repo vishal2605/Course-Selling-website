@@ -1,0 +1,183 @@
+
+.input {
+  padding: 10px; /* Add some padding around the content */
+  border: 1px solid #fff; /* Add a 1px solid border with a light gray color */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set the font size to 16 pixels */
+  width: 400px; /* Set the width of the input box */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-color: #fff;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+.button {
+  padding: 10px; /* Add some padding around the content */
+  text-align: center;
+  border: 1px solid #ccc; /* Add a 1px solid border with a light gray color */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set the font size to 16 pixels */
+  width: 100px; /* Set the width of the input box */
+  
+}
+
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #fff;
+  padding: 10px;
+}
+
+.app-name {
+  font-size: 24px;
+  margin: 0;
+  color: black;
+}
+.app-name-second-half{
+  font-size: 24px;
+  margin: 0;
+  color: #F19A33;
+}
+
+.login-button,
+.signup-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.login-button:hover,
+.signup-button:hover{
+  color: #F19A33;
+} 
+.contained-button{
+  padding: 10px 20px;
+  background-color: #F19A33;
+  color: white; /* Default text color */
+  border: 1px solid #F19A33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.filled-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #F19A33; /* Default text color */
+  border: 1px solid #F19A33;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.filled-button:hover {
+  background-color: #F19A33;
+  color: white; /* Text color on hover */
+}
+
+.heading{
+  --tw-text-opacity: 1;
+  color: rgb(18 55 63 / var(--tw-text-opacity));
+  /* margin-top: 20px; */
+  font-size: 50px;
+  
+}
+.inline-container {
+  display: flex; /* Use flexbox for inline layout */
+  flex-wrap: wrap;
+  align-items: center; /* Center vertically */
+  margin-left: 25px;
+}
+
+.inline-image {
+  width: 0px; /* Adjust image width as needed */
+  height: 0px; /* Adjust image height as needed */
+  margin-left: 100px; /* Add spacing between text and image */
+  margin-bottom: 400px;
+  width: 30%;
+}
+
+.text {
+  width: 50%;
+  float: left;
+  margin-top: 50px;
+  margin-left: 0px;
+  font-size: 19px;
+}
+.front_para{
+  --tw-text-opacity: 1;
+  color: rgb(101 119 130 / var(--tw-text-opacity));
+}
+.explore{
+  background-color: #F19A33;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #F19A33;
+}
+.register{
+  font-weight: 700;
+  margin-bottom: '30px';
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  font-family: Sora,sans-serif;
+}
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.image-container {
+  position: relative;
+}
+
+.selected-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.upload-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width:300px;
+  color: rgb(18 55 63 );
+  margin: 10px;
+  text-align: center;
+  padding: 2rem;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
