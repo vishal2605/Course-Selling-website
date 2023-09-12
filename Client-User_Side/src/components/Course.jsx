@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Card, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import {useNavigate} from "react-router-dom";
+import { BASE_URL } from "../config.js";
 function Course({course}){
   const navigate=useNavigate();
   return(

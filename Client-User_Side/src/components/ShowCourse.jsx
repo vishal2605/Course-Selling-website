@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import {useNavigate} from "react-router-dom";
 import Course from '../components/Course';
 import { courseState } from '../store/atoms/course';
+import { BASE_URL } from "../config.js";
 function ShowCourse() {
   const [courses, setCourses] = useState([]);
     
@@ -15,7 +16,7 @@ function ShowCourse() {
         function callback1(res) {
             res.json().then(callback2)
         }
-        fetch("http://localhost:3000/admin/courses/", {
+        fetch(`${BASE_URL}/admin/courses/`, {
             method: "GET",
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("userToken")

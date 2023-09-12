@@ -11,6 +11,7 @@ import { userState } from "../store/atoms/user";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import {userLoadingState} from '../store/selectors/isUserLoading';
 import {userEmailState} from '../store/selectors/userEmail';
+import { BASE_URL } from "../config.js";
 
 /// File is incomplete. You need to add input boxes to take input for users to login.
 function Login() {
@@ -35,7 +36,7 @@ function Login() {
 
     const handleSubmit=()=>{
 
-      axios.post('http://localhost:3000/users/login',{
+      axios.post(`${BASE_URL}/users/login`,{
       username : formData.email,
       password : formData.password
     })

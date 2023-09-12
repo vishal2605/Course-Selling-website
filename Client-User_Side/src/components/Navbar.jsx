@@ -8,6 +8,7 @@ import { useRecoilValue, useSetRecoilState } from "recoil";
 import { userState } from "../store/atoms/user";
 import {userLoadingState} from '../store/selectors/isUserLoading';
 import {userEmailState} from '../store/selectors/userEmail';
+import { BASE_URL } from "../config.js";
 function Navbar(){
     const navigate = useNavigate();
     const userLoading=useRecoilValue(userLoadingState);

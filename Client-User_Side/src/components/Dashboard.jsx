@@ -2,6 +2,7 @@ import { Button, Typography } from '@mui/material';
 import Course from './Course';
 import React from 'react';
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../config.js";
 import { Link } from 'react-router-dom';
 
 // Functional Component
@@ -16,7 +17,7 @@ function Dashboard() {
         function callback1(res) {
             res.json().then(callback2)
         }
-        fetch("http://localhost:3000/users/purchasedCourses", {
+        fetch(`${BASE_URL}/users/purchasedCourses`, {
             method: "GET",
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("userToken")

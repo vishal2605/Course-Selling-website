@@ -10,6 +10,7 @@ import { useRecoilValue, useSetRecoilState } from "recoil";
 import { userState } from "../store/atoms/user";
 import {userLoadingState} from '../store/selectors/isUserLoading';
 import {userEmailState} from '../store/selectors/userEmail';
+import { BASE_URL } from "../config.js";
 
 /// File is incomplete. You need to add input boxes to take input for users to register.
 function Register() {
@@ -34,7 +35,7 @@ function Register() {
     // if(!email && !password)return;
     console.log("post here")
     console.log(formData.password)
-    axios.post('http://localhost:3000/users/signup',{
+    axios.post(`${BASE_URL}/users/signup`,{
       username : formData.email,
       password : formData.password
     })

@@ -10,6 +10,7 @@ import {courseDescription} from '../store/selectors/courseDescription';
 import {courseImageLink} from '../store/selectors/courseImageLink';
 import {coursePrice} from '../store/selectors/coursePrice';
 import {purchaseState} from '../store/atoms/purchase';
+import { BASE_URL } from "../config.js";
 import axios from 'axios';
 // Functional Component
 function CourseAtId() {
@@ -38,7 +39,7 @@ function CourseAtId() {
       function callback1(res) {
           res.json().then(callback2)
       }
-      fetch("http://localhost:3000/admin/courses/" + courseId, {
+      fetch(`${BASE_URL}/admin/courses/` + courseId, {
           method: "GET",
           headers: {
               "authorization": "Bearer " + localStorage.getItem("userToken")
@@ -76,7 +77,7 @@ function CourseAtId() {
                 function callback1(){
                   alert("course is add sucessfullly")
                 }
-                fetch('http://localhost:3000/users/courses/'+courseId,{
+                fetch(`${BASE_URL}/users/courses/`+courseId,{
                   method:'POST',
                   headers: {
                     "authorization": "Bearer " + localStorage.getItem("userToken")

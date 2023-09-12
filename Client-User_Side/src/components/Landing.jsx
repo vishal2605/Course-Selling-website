@@ -5,6 +5,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Icon from '@mui/material/Icon';
 import img from '../images/course-selling-website.png';
+import { BASE_URL } from "../config.js";
 function Landing(){
 
 

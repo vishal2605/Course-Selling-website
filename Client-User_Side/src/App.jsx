@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import {RecoilRoot,useSetRecoilState} from 'recoil';
 import { userState } from './store/atoms/user';
 import axios from 'axios';
+import { BASE_URL } from "../config.js";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,7 +39,7 @@ function InitUser(){
   const setUser=useSetRecoilState(userState);
   const init=async()=>{
     try{
-      const res=await axios.get('http://localhost:3000/users/me',{
+      const res=await axios.get(`${BASE_URL}/users/me`,{
         headers: {
           "authorization": "Bearer " + localStorage.getItem("userToken")
       }
